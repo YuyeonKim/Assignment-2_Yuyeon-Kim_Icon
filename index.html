@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            YuyeonKim's Assignment 2
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    <!-- This is a comment. It won't appear in your page. -->
+    <!-- The script below brings in a javascript from the URL and allows this page to use the script. It plays sounds. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    </head>
+    <!-- Change the colour here to change your background colour. -->
+    <body style="background-color: rgb(206, 36, 144);">
+        
+        <div class="row">
+            
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames_for_icons.png
+            -->
+
+
+
+            <div class="image-container"><img id="growth1" src="img/Artboard 2@2x.png" onmouseover="this.src='img/first icon@2x.png';" onmouseout="this.src='img/Artboard 2@2x.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="growth2" src="img/5@2x.png" onmouseover="this.src='img/6@2x.png';" onmouseout="this.src='img/5@2x.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="growth3" src="img/Artboard 5@2x.png" onmouseover="this.src='img/Artboard 6@2x.png';" onmouseout="this.src='img/Artboard 5@2x.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="growth4" src="img/Asset 2@2x copy.png" onmouseover="this.src='img/logo1-2@2x.png';" onmouseout="this.src='img/Asset 2@2x copy.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="growth5" src="img/logo2.png" onmouseover="this.src='img/logo1.png';" onmouseout="this.src='img/logo2.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="growth6" src="img/Asset 5@2x.png" onmouseover="this.src='img/Asset 6@2x.png';" onmouseout="this.src='img/Asset 5@2x.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="growth7" src="img/logo2-1@2x.png" onmouseover="this.src='img/logo2-2@2x.png';" onmouseout="this.src='img/logo2-1@2x.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="growth8" src="img/cc2.png" onmouseover="this.src='img/cc22.png';" onmouseout="this.src='img/cc2.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="growth9" src="img/Asset 7@2x.png" onmouseover="this.src='img/Asset 2@2x.png';" onmouseout="this.src='img/Asset 7@2x.png';" width="200" height="200"/></div>
+        </div>
+       <!-- Replace the template file names with your own filenames for the rollover sounds eg. yourSound_4.mp4 -->
+        <script>
+            var sound1 = new buzz.sound("sound/click.mp3");
+            var sound2 = new buzz.sound("sound/ssound3.mp3");
+            var sound3 = new buzz.sound("sound/flip.mp3");
+            var sound4 = new buzz.sound("sound/sound2.mp3");
+            var sound5 = new buzz.sound("sound/sound1.mp3");
+            var sound6 = new buzz.sound("sound/apple.mp3");
+            var sound7 = new buzz.sound("sound/phone.mp3");
+            var sound8 = new buzz.sound("sound/level.mp3");
+            var sound9 = new buzz.sound("sound/30.mp3");
+
+            window.onload = function() {
+                document.getElementById('growth1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('growth2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('growth3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('growth4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('growth5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('growth6').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('growth7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('growth8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('growth9').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
